@@ -25,4 +25,5 @@ jobs:
         run: |
           git config user.name "Tom Richardson"
           git config user.email "your-email@example.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git push
