@@ -1,17 +1,20 @@
 import os
-import random
 import datetime
+import random
 import time
 
-n = random.randint(5, 10)
+n = random.randint(3, 9)
 print(f"Making {n} commits...")
 
 for i in range(n):
     timestamp = datetime.datetime.utcnow().isoformat()
-    with open("log.txt", "a") as f:
-        f.write(f"{timestamp}: Commit number {i+1}\n")
+    filename = f"commit_{timestamp.replace(':', '').replace('.', '')}.txt"
 
-    os.system("git add .")
+    with open(filename, "w") as f:
+        f.write(f"Commit number {i+1} at {timestamp}\n")
+
+    os.system(f"git add {filename}")
     os.system(f"git commit -m 'Automated commit {i+1} of {n}'")
-    os.system("git push origin main")  # ✅ Push immediately after each commit
-    time.sleep(2)  # optional: avoid hitting rate limits
+    os.system("git push origin main")  # Push after each commit
+
+    time.sleep(2)  # Optional: prevent push race conditions
