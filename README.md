@@ -11,7 +11,7 @@ This repo makes 5-10 automated commits daily to fill the GitHub graph. It's a to
 
 ## ⚙️ Motivation
 
-This project critiques the idea that commit activity is a meaningful proxy for engineering ability or passion. While it automates green squares, it also serves as a reminder: real dedication often happens quietly-through thoughtful work, learning, and rest—not just visible contributions.
+This project critiques the idea that commit activity is a meaningful proxy for engineering ability or passion. While it automates green squares, it also serves as a reminder: real dedication often happens quietly - through thoughtful work, learning, and rest - not just visible contributions.
 
 ## 🛠 How to Use It
 
