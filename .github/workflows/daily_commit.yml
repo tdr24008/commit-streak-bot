@@ -24,7 +24,7 @@ jobs:
       - name: Configure Git
         run: |
           git config user.name "Tom Richardson"
-          git config user.email "tom.richardson824@example.com"
+          git config user.email "tom.richardson824@gmail.com"
 
       - name: Commit changes
         run: |
