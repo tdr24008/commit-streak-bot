@@ -1,20 +1,14 @@
 import os
 import datetime
-import random
-import time
 
-n = random.randint(3, 9)
-print(f"Making {n} commits...")
+# Generate a timestamp
+timestamp = datetime.datetime.utcnow().isoformat()
 
-for i in range(n):
-    timestamp = datetime.datetime.utcnow().isoformat()
-    filename = f"commit_{timestamp.replace(':', '').replace('.', '')}.txt"
+# Append a log entry to a persistent file
+with open("log.txt", "a") as f:
+    f.write(f"{timestamp}: Daily automated commit\n")
 
-    with open(filename, "w") as f:
-        f.write(f"Commit number {i+1} at {timestamp}\n")
-
-    os.system(f"git add {filename}")
-    os.system(f"git commit -m 'Automated commit {i+1} of {n}'")
-    os.system("git push origin main")  # Push after each commit
-
-    time.sleep(2)  # Optional: prevent push race conditions
+# Stage and commit the change
+os.system("git add log.txt")
+os.system("git commit -m 'Automated daily commit at {timestamp}'")
+os.system("git push origin main")  # Push the commit
