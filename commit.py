@@ -1,7 +1,7 @@
 import os
 import random
 import datetime
-import subprocess
+import time
 
 n = random.randint(5, 10)
 print(f"Making {n} commits...")
