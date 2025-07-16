@@ -1,17 +1,17 @@
 # 🟩 commit-streak-bot
 
-This repo makes 5-10 automated commits daily to fill the GitHub graph. It's a tongue-in-cheek response to the trend of judging engineers by commit frequency - highlighting how easy it is to game the system and reminding us that real passion isn’t always visible in green squares.
+This repo makes 1-5 automated commits daily to fill the GitHub graph. It's a tongue-in-cheek response to the trend of judging engineers by commit frequency - highlighting how easy it is to game the system and reminding us that real passion isn’t always visible in green squares.
 
 ## 🤖 What It Does
 
-- Runs a GitHub Actions workflow once per day.
-- Executes a Python script that commits 5–10 times to a dummy file.
+- Runs a GitHub Actions workflow five times per day.
+- Executes a Python script that performs a commit 50% of the time.
 - Pushes changes to GitHub automatically.
 - Fills your contribution graph with green, daily.
 
 ## ⚙️ Motivation
 
-This project critiques the idea that commit activity is a meaningful proxy for engineering ability or passion. While it automates green squares, it also serves as a reminder: real dedication often happens quietly - through thoughtful work, learning, and rest - not just visible contributions.
+This project critiques the idea that commit activity is a meaningful proxy for engineering ability or passion. While it automates green squares, it also serves as a reminder: real dedication often happens quietly, through thoughtful work, learning, and rest - not just visible contributions.
 
 ## 🛠 How to Use It
 
