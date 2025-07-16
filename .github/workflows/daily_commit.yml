@@ -3,6 +3,10 @@ name: Daily Commits
 on:
   schedule:
     - cron: '15 12 * * *'  # Runs every day at 12:15 UTC
+    - cron: '21 12 * * *' 
+    - cron: '27 12 * * *' 
+    - cron: '33 12 * * *' 
+    - cron: '39 12 * * *'  
   workflow_dispatch:       # Allows manual trigger in the GitHub UI
 
 jobs:
