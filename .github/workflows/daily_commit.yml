@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # ensures full history is available
+
+      - name: Checkout main branch explicitly
+        run: git checkout -B main
 
       - name: Set up Python
         uses: actions/setup-python@v4
