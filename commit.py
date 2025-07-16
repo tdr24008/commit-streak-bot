@@ -3,7 +3,7 @@ import random
 import datetime
 import subprocess
 
-# Generate 1 to 5 commits
+# Generate 5 to 10 commits
 num_commits = random.randint(5, 10)
 
 for i in range(num_commits):
